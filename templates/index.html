@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web App</title>
+</head>
+<body>
+    <form action="/process" method="POST">
+        <input type="submit" value="Corre Python Script">
+    </form>
+    {% if result %}
+        <p>El resultado es: {{ result }}</p>
+    {% endif %}
+    <a href="{{ url_for('CompareTool') }}">Compare Tool</a>
+    <a href="{{ url_for('TestCaseCreation') }}">Input Values</a>
+</body>
+</html>

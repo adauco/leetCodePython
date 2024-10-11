@@ -1,0 +1,19 @@
+Protocol,Media,Apps,Path,Push Command
+HTTPS-FLV,H.265,Stage,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.265,Stage,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.265,Game,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.265,Game,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.265,Activity,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.265,Activity,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.265stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Stage,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Stage,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Game,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Game,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Activity,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,H.264,Activity,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/H.264stream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Stage,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Stage,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Game,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Game,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Activity,Push Row-Source to Pull-TTP source,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1
+HTTPS-FLV,Pure Audio,Activity,Push TTP-Edge to Pull TTP Post-Processing,/opt/tiger/ftest_lowcode_core/nss_bench_repo/nss_bench /opt/tiger/ftest_lowcode_core/media_cache/Pure Audiostream_test_01  --type rtmp --duration 600 -n 1

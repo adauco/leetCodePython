@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Web App</title>
+    </head>
+    <body>
+        <button onclick="loadData()">Load Data</button>
+        <p id="data"></p>
+        <script>
+            function loadData() {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById('data').innerHTML = this.responseText;
+                    }
+                };
+                xhr.open('GET', 'https://580ov6ga.us-ttp-fn.tiktokd.net', true); // Replace with your API endpoint URL
+                xhr.send();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Test cases tool</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      textarea {
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+      }
+
+      input[type="submit"] {
+        margin-top: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      #output {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+      }
+    </style>
+</head>
+<body>
+  <h1>Generate NSS tests</h1>
+  <form onsubmit="return false;">
+    <label for="nss_bench">nss_bench path:</label>
+    <input type="text" id="nss_bench" name="nss_bench">
+
+    <label for="media_files">Media Files:</label>
+    <textarea id="media_files" name="media_files"></textarea>
+
+    <label for="media_path">Media path:</label>
+    <input type="text" id="media_path" name="media_path">
+
+    <label for="push_url">Push URL:</label>
+    <input type="text" id="push_url" name="push_url">
+
+    <label for="pull_url">Pull URL:</label>
+    <input type="text" id="pull_url" name="pull_url">
+
+    <label for="protocols">Protocols:</label>
+    <textarea id="protocols" name="protocols"></textarea>
+
+    <label for="apps">Apps:</label>
+    <textarea id="apps" name="apps"></textarea>
+
+    <label for="stream_name">Stream name:</label>
+    <input type="text" id="stream_name" name="stream_name">
+
+    <label for="auth_string">Auth string:</label>
+    <input type="text" id="auth_string" name="auth_string">
+
+    <label for="duration">Duration:</label>
+    <input type="text" id="duration" name="duration" value="60">
+
+    <br>
+    <input type="submit" value="Submit" onclick="showData()">
+  </form>
+
+  <div id="output"></div>
+
+  <script>
+    function showData() {
+      const nss_bench = document.getElementById("nss_bench").value;
+      const media_files = document.getElementById("media_files").value.split("\n").map(s => s.trim()).filter(Boolean);
+      const media_path = document.getElementById("media_path").value;
+      const push_url = document.getElementById("push_url").value;
+      const pull_url = document.getElementById("pull_url").value;
+      const protocols = document.getElementById("protocols").value.split("\n").map(s => s.trim()).filter(Boolean);
+      const apps = document.getElementById("apps").value.split("\n").map(s => s.trim()).filter(Boolean);
+      const stream_name = document.getElementById("stream_name").value;
+      const auth_string = document.getElementById("auth_string").value;
+      const duration = document.getElementById("duration").value;
+
+      const data = `${nss_bench} ${media_path} ${media_files} ${push_url} ${pull_url} ${protocols} ${apps} ${stream_name} ${auth_string} ${duration} TOPIC`;
+      document.getElementById("output").innerText = data;
+
+      const data2 = {
+        "nss_bench": nss_bench,
+        "media_files": media_files,
+        "media_path": media_path,
+        "push_url": push_url,
+        "pull_url": pull_url,
+        "protocols": protocols,
+        "apps": apps,
+        "stream_name": stream_name,
+        "auth_string": auth_string,
+        "duration": duration
+      };
+
+      const jsonData = JSON.stringify(data2);
+      document.getElementById("output").innerText = jsonData;
+
+    }
+  </script>
+</body>
+</html>

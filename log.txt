@@ -1,0 +1,3 @@
+2024-10-01 03:11:26.218 FAILED asgard_gen/test_229.py::TestPlanEnv_229::test_US_TTP[206451_OnPublishStart - Stream online - No priority parameter 2<3, 2=2 - Overwrite failed - Verify GetRelaySource successful.-req_data36]
+2024-10-01 03:11:26.218 FAILED asgard_gen/test_229.py::TestPlanEnv_229::test_US_TTP[206451_OnPublishStart - Stream online - No priority parameter 2<3, 2=2 - Overwrite failed - Verify GetRelaySource successful.-req_data37]
+2024-10-01 03:11:26.218 FAILED asgard_gen/test_229.py::TestPlanEnv_229::test_US_TTP[206114_OnPlayStart - Transcoded stream - First pull triggers transcoding - Subsequent pull - Returns success with correct address.-req_data18]

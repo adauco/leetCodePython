@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Diff Tool USDS</title>
+</head>
+<body>
+</strong></p><pre><span style="color: black;">word_cloud</span><span style="color: red;">. A little word cloud generator in </span><span style="color: black;">Python</span><span style="color: red;">. Read more about it on the blog post or the </span><span style="color: black;">website</span><span style="color: red;">. </span><span style="color: black;">D</span><span style="color: red;">he code is tested against Python 3.7, 3.8, 3.9,</span><span style="color: black;"></span><span style="color: black;"></span></pre><p><strong>Text 2:</strong></p><pre><span style="color: black;"></span><span style="color: red;">. A little word cloud generator in </span><span style="color: black;"></span><span style="color: red;">. Read more about it on the blog post or the </span><span style="color: black;"></span><span style="color: red;">. </span><span style="color: black;"></span><span style="color: red;">he code is tested against Python 3.7, 3.8, 3.9,</span><span style="color: black;"></span><span style="color: black;"></span></pre></div>
+<h1>Append Text</h1>
+    <form>
+        <label for="textarea1">Text 1:</label><br>
+        <textarea id="textarea1" name="textarea1" rows="4" cols="50"></textarea>
+        <br><label for="textarea2">Text 2:</label><br>
+        <textarea id="textarea2" name="textarea2" rows="4" cols="50"></textarea>
+        <br>
+        <button id="compare-btn" type="button">Compare texts</button>
+    </form>
+    <br>
+    <div id="result"></div>
+
+    <script>
+        const btn = document.getElementById("compare-btn");
+        const resultDiv = document.getElementById("result");
+
+        btn.addEventListener("click", function() {
+            const text1 = document.getElementById("textarea1").value;
+            const text2 = document.getElementById("textarea2").value;
+
+            const tr1 = "<tr><td style='border: 1px solid black;' colspan='2' align='center'><strong>Text 1:</strong></td><td style='border: 1px solid black;' colspan='2' align='center'><strong>Text 2:</strong></td></tr>";
+            const tr2 = "<tr><td style='border: 1px solid black;' colspan='2'>" + text1 + "</td><td style='border: 1px solid black;' colspan='2'>" + text2 + "</td></tr>";
+            resultDiv.innerHTML = "<table style='border: 1px solid black; border-collapse: collapse;'>" + tr1 + tr2 + "</table>";
+        });
+    </script>
+</body>
+</html>
